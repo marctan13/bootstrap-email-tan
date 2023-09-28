@@ -1,0 +1,71 @@
+body{
+  overflow: hidden;
+}
+
+.row{
+  background-color: blanchedalmond;
+  height: 100vh;
+}
+
+@media only screen and (max-width: 1270px){
+  .col1{
+    display: none;
+  }
+}
+
+.mail-icon{
+  width: 2em;
+  height: 2em;
+}
+
+.search-bar{
+  min-width: 60vw;
+}
+
+.col1, .col2, .col3{
+    border: 3px red solid;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+
+.row{
+    border: 1px blue solid;
+  }
+
+.navbar{
+    min-width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+  }
+
+.card-body{
+  border-bottom: 1px solid black;
+  padding: 5px;
+}
+
+.list-group{
+  display: flex;
+  width: 15rem;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+
+
+.list-group.item{
+  width: 15em;
+}
+
+li:hover{
+  opacity: 0.6;
+}
+
+/* $container-max-widths: (
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1140px,
+    xxl: 1320px
+  ); */
