@@ -14,6 +14,8 @@
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css" />
+    <!-- Font for Icon and Brand Name -->
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@700&display=swap" rel="stylesheet">
     <title>Bootstrap Email Project</title>
   </head>
   <body>
@@ -42,8 +44,9 @@
         <!-- Icon -->
         <div class="container">
           <a class="navbar-brand d-none d-lg-block" href="#">
-            <img class = "mail-icon" src="./email-logo.jpg" alt="Bootstrap">
-            Marc's Email Service
+            <!-- Got moogle icon from https://iconduck.com/icons/176506/symbol-moogle -->
+            <img src="./symbol-moogle.svg" class="moogle" role="img" alt="moogle">
+            Moogle Mail
           </a>
         </div>
         <!-- Search Bar -->
@@ -55,7 +58,7 @@
               placeholder="Search"
               aria-label="Search"
               />
-            <button class="btn btn-outline-success" type="submit">
+            <button class="btn" type="submit">
               Search
             </button>
           </form>
@@ -86,69 +89,80 @@
           </ul>
         </div>
       </div>
-      <div class="row w-100">
+      <div class="row">
         <!-- column 1 -->
         <div class="col1 col-sm-3 d-none col-md-6 col-lg-1 d-lg-flex">
-          <ul class="list-group d-none d-md-block">
-            <button type="button" class="btn btn-primary btn-sm btn-dark">
+          <ul class="list-group d-md-block">
+            <button type="button" class="compose btn btn-primary btn-sm btn-dark">
               Compose  <i class="bi bi-cursor-fill"></i></button>
-            <a href="#" class="list-group-item active list-group-item-action list-group-item-dark">Inbox</a>
+            <a href="#" class="list-group-item active list-group-item-action list-group-item-dark">Inbox <span class="badge rounded-pill">999+</span></a>
             <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Sent</a>
-            <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Spam</a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Favorites</a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Spam <span class="badge rounded-pill">8</span></a>
             <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Archive</a>
-            <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Trash</a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Trash <span class="badge rounded-pill">14</span></a>
             <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Shopping</a>
             <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Bills</a>
           </ul>
         </div>
         <!-- column 2 -->
         <div class="col2 order-1 order-lg-0 col-sm-9 col-md-6 col-lg-4 overflow-auto d-lg-flex" data-bs-spy="scroll">
-          <div class="card-body" style="background-color: rgb(167, 218, 201);">
+          <div class="card-body" style="background-color: #358556;">
             <h5 class="card-title">A1RBNB(airbnb@support.com)</h5>
             <h6 class="card-subtitle mb-2 text-body-secondary">A1rbnb Wiki Info</h6>
             <p class="card-text">Airbnb, Inc. is an American San Francisco-based company operating an
               online marketplace for short- and long-term homestays and
               experiences. The company acts as a broker and charges a commission
               from each booking....</p>
-            <a href="#" class="btn btn-primary btn-dark">Reply</a>
-            <a href="#" class="btn btn-primary btn-dark">Save</a>
-            <a href="#" class="btn btn-primary btn-dark">Favorite</a>
-            <a href="#" class="btn btn-primary btn-dark">Delete</a>
+              <div class="card-button">
+                <a href="#" class="btn btn-primary btn-dark"><i class="bi bi-reply-fill" alt="Reply"></i></a>
+                <a href="#" class="btn btn-primary btn-dark"><i class="bi bi-envelope-paper-fill" alt="Mark as Read"></i></a>
+                <a href="#" class="btn btn-primary btn-dark"><i class="bi bi-star-fill" alt="Favorite"></i></a>
+                <a href="#" class="btn btn-primary btn-dark"><i class="bi bi-trash" alt="Delete"></i></a>
+              </div>
           </div>
           <div class="card-body">
             <h5 class="card-title">fadfadsfa@valleytech.net</h5>
             <h6 class="card-subtitle mb-2 text-body-secondary">Application Internship</h6>
             <p class="card-text">Quick reminder to send in your application to be considered for the program.</p>
-            <a href="#" class="btn btn-primary btn-dark">Reply</a>
-            <a href="#" class="btn btn-primary btn-dark">Save</a>
-            <a href="#" class="btn btn-primary btn-dark">Favorite</a>
-            <a href="#" class="btn btn-primary btn-dark">Delete</a>
+            <div class="card-button">
+              <a href="#" class="btn btn-primary btn-dark"><i class="bi bi-reply-fill" alt="Reply"></i></a>
+              <a href="#" class="btn btn-primary btn-dark"><i class="bi bi-envelope-paper-fill" alt="Mark as Read"></i></a>
+              <a href="#" class="btn btn-primary btn-dark"><i class="bi bi-star-fill" alt="Favorite"></i></a>
+              <a href="#" class="btn btn-primary btn-dark"><i class="bi bi-trash" alt="Delete"></i></a>
+            </div>
           </div>
           <div class="card-body d-none d-lg-block">
             <h5 class="card-title">xxxx@amazon.com</h5>
             <h6 class="card-subtitle mb-2 text-body-secondary">Order Delivered</h6>
             <p class="card-text">Your order#1414123 has been delivered to the front porch</p>
-            <a href="#" class="btn btn-primary btn-dark">Reply</a>
-            <a href="#" class="btn btn-primary btn-dark">Save</a>
-            <a href="#" class="btn btn-primary btn-dark">Favorite</a>
-            <a href="#" class="btn btn-primary btn-dark">Delete</a>
+            <div class="card-button">
+              <a href="#" class="btn btn-primary btn-dark"><i class="bi bi-reply-fill" alt="Reply"></i></a>
+              <a href="#" class="btn btn-primary btn-dark"><i class="bi bi-envelope-paper-fill" alt="Mark as Read"></i></a>
+              <a href="#" class="btn btn-primary btn-dark"><i class="bi bi-star-fill" alt="Favorite"></i></a>
+              <a href="#" class="btn btn-primary btn-dark"><i class="bi bi-trash" alt="Delete"></i></a>
+            </div>
           </div>
-          <div class="card-body d-none d-lg-block">
+          <div class="card-body d-sm-none d-md-block">
             <h5 class="card-title">xxx@baytech.com</h5>
             <h6 class="card-subtitle mb-2 text-body-secondary">Module 2</h6>
             <p class="card-text">Welcome to Module 2!</p>
-            <a href="#" class="btn btn-primary btn-dark">Reply</a>
-            <a href="#" class="btn btn-primary btn-dark">Save</a>
-            <a href="#" class="btn btn-primary btn-dark">Favorite</a>
-            <a href="#" class="btn btn-primary btn-dark">Delete</a>
+            <div class="card-button">
+              <a href="#" class="btn btn-primary btn-dark"><i class="bi bi-reply-fill" alt="Reply"></i></a>
+              <a href="#" class="btn btn-primary btn-dark"><i class="bi bi-envelope-paper-fill" alt="Mark as Read"></i></a>
+              <a href="#" class="btn btn-primary btn-dark"><i class="bi bi-star-fill" alt="Favorite"></i></a>
+              <a href="#" class="btn btn-primary btn-dark"><i class="bi bi-trash" alt="Delete"></i></a>
+            </div>
           </div>
         </div>
         <!-- column 3 -->
         <div class="col3 order-0 order-lg-1 col-sm-3 col-md-6 col-lg-7 overflow-auto d-lg-flex">
           <div class="email">
             <h3 class="contact">A1RBNB(airbnb@support.com)</h3>
-            <h2 class="subject">Subject: A1rbnb Wiki Info</h1>
+            <hr>
+            <h2 class="subject">Subject: A1rbnb Wiki Info</h2>
           <p>
+            <span class="date d-flex justify-content-end"> 09/30/2023 7:23:56am</span><br>
             Airbnb, Inc. is an American San Francisco-based company operating an
             online marketplace for short- and long-term homestays and
             experiences. The company acts as a broker and charges a commission
@@ -156,12 +170,12 @@
             Nathan Blecharczyk, and Joe Gebbia. Airbnb is a shortened version of
             its original name, AirBedandBreakfast.com.
           </p>
-          <img class="beach-home d-none d-lg-block d-flex" src="./airbnb.jpeg" alt="vacation-home">
+              <img class="attach-img d-none d-lg-block" src="./airbnb.jpeg" alt="vacation-home">
           <div>
-          <a href="#" class="btn btn-primary btn-dark">Reply</a>
-          <a href="#" class="btn btn-primary btn-dark">Save</a>
-          <a href="#" class="btn btn-primary btn-dark">Favorite</a>
-          <a href="#" class="btn btn-primary btn-dark">Delete</a>
+          <a href="#" class="btn btn-primary btn-dark"><i class="bi bi-reply-fill" alt="Reply"></i></a>
+          <a href="#" class="btn btn-primary btn-dark"><i class="bi bi-envelope-paper-fill" alt="Mark as Read"></i></a>
+          <a href="#" class="btn btn-primary btn-dark"><i class="bi bi-star-fill" alt="Favorite"></i></a>
+          <a href="#" class="btn btn-primary btn-dark"><i class="bi bi-trash" alt="Delete"></i></a>
           </div>
           <div class="form-group">
             <label for="exampleFormControlTextarea1">Write Message</label>
