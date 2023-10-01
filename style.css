@@ -1,10 +1,24 @@
 body{
   overflow: hidden;
+  font-family: 'Times New Roman', Times, serif;
+  background-color: azure;
 }
 
 .row{
   background-color: blanchedalmond;
   height: 100vh;
+}
+
+.card-subtitle, .subject{
+  font-weight: bold;
+  background-color: rgba(66, 46, 16, 0.562);
+  border-radius: 10px;
+}
+
+.card-title, .contact{
+  background-color: rgba(223, 153, 49, 0.562);
+  border-radius: 10px;
+  padding: 5px;
 }
 
 @media only screen and (max-width: 1270px){
@@ -23,14 +37,9 @@ body{
 }
 
 .col1, .col2, .col3{
-    border: 3px red solid;
+    border: 1px black solid;
     display: flex;
     flex-wrap: wrap;
-  }
-
-
-.row{
-    border: 1px blue solid;
   }
 
 .navbar{
@@ -52,14 +61,23 @@ body{
   justify-content: space-evenly;
 }
 
-
-
 .list-group.item{
   width: 15em;
 }
 
+.compose:{
+  border: 3px solid red;
+  margin-top: 45px;
+}
+
 li:hover{
   opacity: 0.6;
+}
+
+.beach-home{
+  height: 40vh;
+  width: 40vw;
+  padding: 20px;
 }
 
 /* $container-max-widths: (
