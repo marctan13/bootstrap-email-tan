@@ -35,6 +35,11 @@ body{
   height: 40vh;
 }
 
+.message{
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .col1, .col2, .col3{
     display: flex;
     flex-wrap: wrap;
