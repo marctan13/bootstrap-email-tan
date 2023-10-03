@@ -83,8 +83,9 @@ body{
 }
 
 .compose{
-  margin-top: 2vh;
-  margin-bottom: 2vh;
+  position: absolute;
+  bottom: 70px;
+  left: 8px;
 }
 
 li:hover{
