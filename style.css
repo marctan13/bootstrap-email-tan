@@ -78,10 +78,6 @@ body{
   justify-content: space-evenly;
 }
 
-.list-group.item{
-  width: 15em;
-}
-
 .compose{
   position: absolute;
   bottom: 70px;
